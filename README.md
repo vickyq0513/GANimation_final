@@ -34,3 +34,4 @@ vscode/launch.json: code specifies train and test options.
     year={2019}
 }
 ```
+https://drive.google.com/drive/folders/1ZjKqbtqxriVf7aUj-A84Nahpewr_ubcv (celeA dataset with labeled AU)
