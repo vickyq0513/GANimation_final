@@ -6,7 +6,7 @@ In this work we try to replicate a novel GAN conditioning scheme, proposed by th
 
 
 ## Prerequisites
-- Install requirements.txt (Detailed packages and version required are listed)
+- Install requirements.txt (Detailed packages[Pytorch, tensorboardx etc.] and version required are listed)
 
 ## Data Preparation
 The code requires a directory containing the following files:
@@ -20,7 +20,10 @@ An example of this directory is shown in `celeA/`.
 
 
 ## Run
-vscode/launch.json: code specifies train and test options
+vscode/launch.json: code specifies train and test options.
+
+## Trained Result
+`checkpoints/`: folder containing trained model, to be loaded in test process.
 
 ## Reference
 ```
