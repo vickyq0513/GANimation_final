@@ -1,29 +1,6 @@
-// {
-//     // Use IntelliSense to learn about possible attributes.
-//     // Hover to view descriptions of existing attributes.
-//     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-//     "version": "0.2.0",
-//     "configurations": [
-//         {
-//             "name": "Python: Current File",
-//             "type": "python",
-//             "request": "launch",
-//             "program": "${file}",
-//             "console": "integratedTerminal",
-//             "args": ["--data_dir", "C:/Users/vgao/Downloads/230CODES/GANimation/celebA/", 
-//             "--name", "experiment_celeNew",
-//             "--batch_size", "16", "--n_threads_train", "8",
-//             "--image_size", "128", "--cond_nc", "17"],
-//             "justMyCode": false
-//         }
-//     ]
-// }
-
-
-
 {
+    // -------Training process launching----------
     // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
@@ -33,10 +10,35 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "args": ["--input_path", "C:/Users/vgao/Downloads/230CODES/GANimation/celebA/imgs/191413.jpg", //193455.jpg", //202579.jpg
+            "args": ["--data_dir", "./GANimation/celebA/", 
+            "--name", "experiment_celeNew",
+            "--batch_size", "16", 
+            "--n_threads_train", "8",
+            "--image_size", "128",
+            "--cond_nc", "17"],
+            "justMyCode": false
+        }
+    ]
+}
+
+
+
+{
+    // -------Testing process launching----------
+    // Use IntelliSense to learn about possible attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": ["--input_path", "./GANimation/celebA/imgs/191413.jpg", 
                      "--test_id", "191413", 
-                     "--data_dir", "C:/Users/vgao/Downloads/230CODES/GANimation/celebA/", 
-                     "--test_id_desired","198266",// "192316",
+                     "--data_dir", "./GANimation/celebA/", 
+                     "--test_id_desired","198266",
                      "--name", "experiment_celeNew", 
                      "--batch_size", "16",
                      "--cond_nc", "17"]
